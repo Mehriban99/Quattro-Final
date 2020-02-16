@@ -1,0 +1,2752 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: .3s all ease-in-out;
+}
+.header .header-middle {
+  text-align: right;
+}
+.header .header-middle .dropdown {
+  display: inline-block;
+  position: relative;
+  padding: 2px 10px;
+}
+.header .header-middle .dropdown:hover .drop-content {
+  visibility: visible;
+  top: 200%;
+}
+.header .header-middle .dropdown .dropbtn {
+  position: relative;
+}
+.header .header-middle .dropdown .dropbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: .3s all ease-in-out;
+}
+.header .header-middle .dropdown .dropbtn a:hover {
+  color: #FF3837;
+}
+.header .header-middle .dropdown .dropbtn i {
+  font-size: 13px;
+}
+.header .header-middle .dropdown .home::after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  background-color: #FF3837;
+  bottom: -1px;
+  left: -1px;
+}
+.header .header-middle .dropdown .drop-content {
+  background-color: #1A1A1A;
+  text-align: left;
+  padding: 40px 0;
+  min-width: 230px;
+  position: absolute;
+  top: 220%;
+  left: -30%;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+.header .header-middle .dropdown .drop-content a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 8px 0 8px 40px;
+  transition: .3s all;
+}
+.header .header-middle .dropdown .drop-content a:hover {
+  color: #FF3837;
+  transform: translateX(30px);
+}
+.header .shopping {
+  position: relative;
+  text-align: right;
+}
+.header .shopping i {
+  font-size: 16px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.header .shopping i:hover {
+  color: #FF3837;
+}
+.header .shopping .basket {
+  margin-left: 5px;
+}
+.header .shopping p {
+  position: absolute;
+  font-size: 11px;
+  border-radius: 50px;
+  padding: 2px 7px;
+  color: white;
+  background-color: #FF3837;
+  top: -9px;
+  right: 0;
+}
+
+#slider .sliderAll {
+  overflow: hidden;
+}
+#slider .sliderAll .slick-next {
+  z-index: 99;
+  background-color: #212529;
+  margin-right: 40px;
+}
+#slider .sliderAll .slick-next::before {
+  content: '';
+}
+#slider .sliderAll .slick-next:hover {
+  background-color: #7D7D7D;
+}
+#slider .sliderAll .slick-prev {
+  z-index: 99;
+  margin-left: 40px;
+  background-color: #212529;
+}
+#slider .sliderAll .slick-prev::before {
+  content: '';
+}
+#slider .sliderAll .slick-prev:hover {
+  background-color: #7D7D7D;
+}
+#slider .sliderAll .sliderBox {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/qqq.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20rem 0;
+}
+#slider .sliderAll .sliderBox h3 {
+  font-size: 36px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+}
+#slider .sliderAll .sliderBox button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 18px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+#slider .sliderAll .sliderBox button:hover {
+  color: black;
+  background-color: white;
+}
+#slider .sliderAll .sliderBox .btn2 {
+  margin-left: 20px;
+  background-color: #383838;
+}
+#slider .sliderAll .slide2 {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/12/xl-red.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20rem 0;
+}
+#slider .sliderAll .slide2 h3 {
+  font-size: 36px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+}
+#slider .sliderAll .slide2 button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 18px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+#slider .sliderAll .slide2 button:hover {
+  color: black;
+  background-color: white;
+}
+#slider .sliderAll .slide2 .btn2 {
+  margin-left: 20px;
+  background-color: #383838;
+}
+
+.range {
+  background-color: #191919;
+  padding: 50px 0;
+}
+.range .parts select {
+  background: #111;
+  font-size: 14px;
+  color: white;
+  padding: 13px 30px 12px 20px;
+  border: 1px solid #4b4b4b;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin: 15px 0;
+  font-family: 'Muli', sans-serif;
+}
+
+.icons {
+  padding: 6rem 0;
+  background-color: #F6F6F7;
+}
+.icons .icon-part {
+  text-align: center;
+}
+.icons .icon-part img {
+  width: 22%;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.icons .icon-part img:hover {
+  transform: scale(1.1);
+}
+.icons .icon-part p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 25px 0;
+}
+.icons .icon-part h5 {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.7;
+}
+.icons .icon-part button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 20px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+}
+.icons .icon-part button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+
+.salecars .text {
+  text-align: center;
+  padding: 6rem 0 4rem 0;
+}
+.salecars .text span {
+  font-size: 30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.salecars .text img {
+  width: 60px;
+  height: auto;
+}
+.salecars .text p {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  margin-top: 20px;
+}
+.salecars #slider2 {
+  padding-bottom: 3rem;
+}
+.salecars #slider2 .sliderCar .cars {
+  text-align: center;
+}
+.salecars #slider2 .sliderCar .cars .img-box {
+  position: relative;
+}
+.salecars #slider2 .sliderCar .cars .img-box .label {
+  position: absolute;
+  padding: 15px 50px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+  overflow: hidden;
+}
+.salecars #slider2 .sliderCar .cars .img-box .label:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.salecars #slider2 .sliderCar .cars .img-box .label span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s all ease-in-out;
+}
+.salecars #slider2 .sliderCar .cars .img-box .label small {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s all ease-in-out;
+  visibility: hidden;
+}
+.salecars #slider2 .sliderCar .cars .img-box:hover .label span {
+  top: -50px;
+  visibility: hidden;
+}
+.salecars #slider2 .sliderCar .cars .img-box:hover .label small {
+  top: 5px;
+  visibility: visible;
+}
+.salecars #slider2 .sliderCar .cars .img-box:hover .btn1 {
+  visibility: hidden;
+}
+.salecars #slider2 .sliderCar .cars .img-box:hover .btn2 {
+  visibility: visible;
+}
+.salecars #slider2 .sliderCar .cars .img-box img {
+  cursor: pointer;
+}
+.salecars #slider2 .sliderCar .cars .img-box button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 21px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+}
+.salecars #slider2 .sliderCar .cars .img-box button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.salecars #slider2 .sliderCar .cars .img-box .btn2 {
+  visibility: hidden;
+}
+.salecars #slider2 .sliderCar .cars .img-box .add {
+  padding: 10px 45px;
+}
+.salecars #slider2 .sliderCar .cars .info {
+  padding: 15px 0;
+  background-color: #121212;
+  margin-bottom: 20px;
+}
+.salecars #slider2 .sliderCar .cars .info span {
+  color: white;
+  font-size: 12px;
+  font-family: 'Muli', sans-serif;
+  margin: 0 10px;
+}
+.salecars #slider2 .sliderCar .cars a {
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: .3s all ease-in-out;
+}
+.salecars #slider2 .sliderCar .cars a:hover {
+  text-decoration: none;
+}
+.salecars #slider2 .sliderCar .slick-dots {
+  cursor: pointer;
+}
+.salecars #slider2 .sliderCar .slick-dots .slick-active #slick-slide-control10::before {
+  color: #ff3837;
+  font-size: 25px;
+}
+.salecars #slider2 .sliderCar .slick-dots .slick-active #slick-slide-control11::before {
+  color: #C7C7C8;
+  font-size: 25px;
+}
+
+.together {
+  position: relative;
+}
+.together .youtube {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg3.jpg?id=1919);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0 12rem 0;
+  position: relative;
+}
+.together .youtube::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .9;
+}
+.together .youtube .ytbpart1 h5 {
+  font-size: 16px;
+  color: #bbbbbb;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.together .youtube .ytbpart1 h3 {
+  font-size: 24px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 30px;
+}
+.together .youtube .ytbpart1 .tab-menu .btns {
+  border-bottom: 1px solid #2b2b2b;
+  padding: 35px 0;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .tab {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-right: 30px;
+  transition: .3s all ease-in-out;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .tab:hover {
+  color: #FF3837;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .tab1 {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  color: #FF3837;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-right: 30px;
+  position: relative;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .tab1::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: #FF3837;
+  left: 0;
+  top: 60px;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .active {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  color: #FF3837;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-right: 30px;
+  position: relative;
+}
+.together .youtube .ytbpart1 .tab-menu .btns .active::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: #FF3837;
+  left: 0;
+  top: 60px;
+}
+.together .youtube .ytbpart1 .tab-menu .content {
+  padding-top: 30px;
+}
+.together .youtube .ytbpart1 .tab-menu .content p {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  padding-right: 20px;
+}
+.together .youtube .ytbpart1 .tab-menu .content button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 18px 35px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+.together .youtube .ytbpart1 .tab-menu .content button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.together .youtube .ytbpart2 {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/automobile2-1024x708.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.together .youtube .ytbpart2 a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  border-radius: 50px;
+  background-color: #FF3837;
+  padding: 18px 20px 18px 28px;
+}
+.together .logo {
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FF3837;
+  width: 90%;
+  margin: auto;
+  margin-top: -6rem;
+}
+.together .logo .logos {
+  width: 11%;
+  padding: 30px 25px;
+}
+
+.testi {
+  background-color: #f6f6f7;
+  text-align: center;
+  padding: 8rem 0 4rem 0;
+}
+.testi span {
+  font-size: 30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.testi img {
+  width: 60px;
+  height: auto;
+}
+.testi p {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  margin-top: 20px;
+}
+
+.testi-slide {
+  background-color: #f6f6f7;
+  padding-bottom: 5rem;
+}
+.testi-slide .parts {
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.testi-slide .parts:hover {
+  box-shadow: none;
+}
+.testi-slide .parts:hover img {
+  transform: translateX(19px);
+}
+.testi-slide .parts:hover .alt-part {
+  transform: translateX(-19px);
+}
+.testi-slide .parts .pieces {
+  padding: 0;
+  position: relative;
+  z-index: 50;
+}
+.testi-slide .parts .pieces img {
+  transition: .3s all ease-in-out;
+}
+.testi-slide .parts .pieces .alt-part {
+  position: absolute;
+  background-color: #626262;
+  width: 100%;
+  height: 100%;
+  top: 25%;
+  left: 20%;
+  font-size: 14px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 82% 0 0 10%;
+  z-index: -10;
+  transition: .3s all ease-in-out;
+}
+.testi-slide .parts .pieces .two {
+  background-color: #FF3837;
+}
+.testi-slide .parts .pieces2 {
+  padding: 2.5rem 1rem 2.5rem 5rem;
+}
+.testi-slide .parts .pieces2 h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+.testi-slide .parts .pieces2 p {
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: #5c5c5c;
+}
+
+.carsbody {
+  text-align: center;
+  padding: 6rem 0 3.5rem 0;
+}
+.carsbody span {
+  font-size: 30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.carsbody img {
+  width: 60px;
+  height: auto;
+}
+.carsbody p {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  margin-top: 20px;
+}
+
+.carmodels {
+  padding-bottom: 5rem;
+}
+.carmodels .models {
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 30%;
+  padding: 40px 10px 20px 10px;
+  margin: 0 20px 25px 15px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.carmodels .models:hover {
+  background-color: black;
+}
+.carmodels .models:hover img {
+  filter: grayscale(0);
+}
+.carmodels .models:hover .txt p {
+  color: white;
+}
+.carmodels .models img {
+  filter: grayscale(1);
+  transition: .3s all ease-in-out;
+}
+.carmodels .models .txt {
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.carmodels .models .txt p {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: .3s all ease-in-out;
+}
+.carmodels .models .txt h3 {
+  color: #ff3837;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.autocar {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg5.jpg?id=1923);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 6rem 0;
+  overflow-x: hidden;
+}
+.autocar::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .9;
+}
+.autocar .auto1 {
+  padding: 0;
+}
+.autocar .auto1 .sentence {
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+.autocar .auto1 .sentence h5 {
+  font-size: 16px;
+  color: #bbbbbb;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.autocar .auto1 .sentence h3 {
+  font-size: 24px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 30px;
+}
+.autocar .auto2 {
+  padding: 2rem 0;
+}
+.autocar .auto2 .pieces {
+  margin-bottom: 30px;
+}
+.autocar .auto2 .pieces img {
+  width: 60px;
+  height: auto;
+  padding: 0 10px 20px 0;
+}
+.autocar .auto2 .pieces span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.autocar .auto2 .pieces p {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  padding-right: 30px;
+  line-height: 1.7;
+}
+
+.numbers {
+  padding: 4rem 0;
+  background-color: #0D0D0D;
+}
+.numbers .counterUp img {
+  width: 60px;
+  height: auto;
+}
+.numbers .counterUp .right {
+  margin-left: 30px;
+}
+.numbers .counterUp .right span {
+  font-size: 26px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+.numbers .counterUp .right p {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+}
+
+.team {
+  background-color: #F6F6F7;
+}
+
+.team-members {
+  background-color: #F6F6F7;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+.team-members .pieces {
+  margin-right: 50px;
+  margin: auto;
+  position: relative;
+  z-index: 50;
+}
+.team-members .pieces:hover .person {
+  box-shadow: none;
+  transform: translateX(17px);
+}
+.team-members .pieces:hover .alt-part {
+  transform: translateX(-17px);
+}
+.team-members .pieces .person {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: .3s all ease-in-out;
+}
+.team-members .pieces .alt-part {
+  position: absolute;
+  background-color: #121212;
+  width: 89%;
+  height: 70%;
+  top: 60%;
+  left: 50px;
+  padding: 43% 0 0 10%;
+  z-index: -10;
+  transition: .3s all ease-in-out;
+}
+.team-members .pieces .alt-part h5 {
+  font-size: 16px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.team-members .pieces .alt-part p {
+  font-size: 12px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+.team-members .pieces .alt-part i {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.team-members .pieces .two {
+  background-color: #FF3837;
+}
+
+.question {
+  padding: 5rem 0;
+}
+.question .rangepart .firstpart {
+  padding-bottom: 3rem;
+}
+.question .rangepart .firstpart span {
+  font-size: 30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.question .rangepart .firstpart img {
+  width: 60px;
+  height: auto;
+}
+.question .rangepart .firstpart p {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  margin-top: 20px;
+}
+.question .rangepart .secondpart {
+  padding-bottom: 20px;
+}
+.question .rangepart .secondpart p {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.question .rangepart .secondpart hr {
+  height: 4px;
+  background-color: #EBEAEA;
+  border: none;
+  position: relative;
+}
+.question .rangepart .secondpart hr::after {
+  position: absolute;
+  content: '';
+  width: 70%;
+  height: 100%;
+  background-color: #FF3837;
+  top: 0;
+  left: 0;
+}
+.question .rangepart .secondpart:nth-child(3) hr::after {
+  width: 50%;
+}
+.question .rangepart .secondpart:nth-child(4) hr::after {
+  width: 60%;
+}
+.question .rangepart .secondpart:nth-child(5) hr::after {
+  width: 90%;
+}
+.question .togglepart {
+  cursor: pointer;
+  padding-top: 3rem;
+}
+.question .togglepart p {
+  font-size: 16px;
+  color: #1b1b11;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.question .togglepart i {
+  font-size: 15px;
+  color: #FF3837;
+}
+.question .togglepart .min {
+  display: none;
+}
+.question .togglepart .minu {
+  display: none;
+}
+.question .togglepart .minus {
+  display: none;
+}
+.question .togglepart .minuss {
+  display: none;
+}
+.question .togglepart hr {
+  height: 2px;
+  background-color: #EBEAEA;
+  border: none;
+}
+.question .togglepart .click-alt {
+  display: none;
+}
+.question .togglepart .click-alt p {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+}
+
+.gallerytxt {
+  padding: 4rem 0;
+  background-color: #212121;
+}
+.gallerytxt span {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.gallerytxt img {
+  width: 60px;
+  height: auto;
+}
+
+.gallery {
+  overflow: hidden;
+  background-color: #f6f6f7;
+  position: relative;
+}
+.gallery .carimg {
+  position: relative;
+}
+.gallery .carimg::after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.gallery .carimg:hover::after {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.gallery .carimg:hover .position {
+  top: 70%;
+}
+.gallery .carimg .position {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: .3s all ease-in-out;
+}
+.gallery .carimg .position p {
+  font-size: 12px;
+  color: #c5c5c5;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 5px;
+}
+.gallery .carimg .position h3 {
+  font-size: 16px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.gallery .slick-prev {
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  background-color: #ff3837;
+  border-radius: 50px;
+  z-index: 99;
+}
+.gallery .slick-next {
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  background-color: #ff3837;
+  border-radius: 50px;
+  z-index: 99;
+}
+
+.blred {
+  background-color: #F6F6F7;
+  padding-bottom: 3rem;
+}
+.blred .square {
+  background-color: #111111;
+  padding: 4rem 3rem;
+  margin: 0 40px 20px 0;
+}
+.blred .square h3 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.blred .square h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff3837;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+.blred .square p {
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: #bbbbbb;
+}
+.blred .slick-dots .slick-active #slick-slide-control20::before {
+  color: #ff3837;
+  font-size: 25px;
+}
+.blred .slick-dots .slick-active #slick-slide-control21::before {
+  color: #C7C7C8;
+  font-size: 25px;
+}
+.blred .ex {
+  background-color: #FF3837;
+}
+.blred .ex h4 {
+  color: white;
+}
+
+.carstore {
+  padding: 4rem 0;
+}
+.carstore .pieces {
+  padding-bottom: 3rem;
+}
+.carstore .pieces span {
+  font-size: 30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.carstore .pieces img {
+  width: 60px;
+  height: auto;
+}
+.carstore .pieces a {
+  padding: 5rem 0;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+}
+.carstore .pieces a:hover {
+  text-decoration: none;
+}
+.carstore .pieces a:nth-child(1) {
+  color: #ff3837;
+  text-decoration: none;
+}
+.carstore .items {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.carstore .items:hover .price span {
+  visibility: hidden;
+  left: 100%;
+}
+.carstore .items:hover .price small {
+  visibility: visible;
+  left: 50%;
+  transform: translate(-50%);
+}
+.carstore .items img {
+  border: 1px solid black;
+}
+.carstore .items a {
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 0;
+}
+.carstore .items a:hover {
+  text-decoration: none;
+}
+.carstore .items .price {
+  position: relative;
+}
+.carstore .items .price span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #323232;
+  transition: .3s all ease-in-out;
+}
+.carstore .items .price small {
+  position: absolute;
+  left: 0;
+  color: #ff3837;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+.carstore .items .price small:hover {
+  text-decoration: none;
+}
+
+.news {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg4.jpg?id=1921);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 6rem 0;
+  overflow-x: hidden;
+}
+.news::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .9;
+}
+.news .newstxt {
+  padding-bottom: 50px;
+}
+.news .newstxt span {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.news .newstxt img {
+  width: 60px;
+  height: auto;
+}
+.news .slick-next::before {
+  font-size: 25px;
+  color: #ff3837;
+}
+.news .slick-prev::before {
+  font-size: 25px;
+  color: #ff3837;
+}
+.news .newspart {
+  background-color: #212121;
+  padding: 40px;
+  margin-left: 30px;
+  transition: .3s all ease-in-out;
+}
+.news .newspart h6 {
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  transition: .3s all ease-in-out;
+  margin-bottom: 25px;
+}
+.news .newspart h6:hover {
+  text-decoration: none;
+  color: #FF3837;
+}
+.news .newspart a {
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .3s all ease-in-out;
+}
+.news .newspart a:hover {
+  text-decoration: none;
+  color: #FF3837;
+}
+.news .newspart p {
+  margin: 50px 0 100px 0;
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+}
+.news .newspart button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #7b7b7b;
+  border: 1px solid #7b7b7b;
+  padding: 5px 28px;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  transition: .3s all ease-in-out;
+}
+.news .newspart button:hover {
+  border: 1px solid #ff3837;
+  color: white;
+  background-color: #ff3837;
+}
+.news .one:hover {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/12/alloy-auto-225840-2-400x400.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.news .two:hover {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/09/ferrar-400x400.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe {
+  background-color: black;
+  padding: 3rem 0;
+}
+.subscribe h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.subscribe p {
+  margin-top: 10px;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+}
+.subscribe input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bbbbbb;
+  outline: none;
+  padding: 10px 180px 10px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+}
+.subscribe button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 17px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+}
+.subscribe button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+
+.times {
+  padding-bottom: 12rem;
+}
+.times .onetimess {
+  box-shadow: 0 0 37.74px 13.26px rgba(0, 0, 0, 0.07);
+}
+.times .onetimess .onetime {
+  padding: 30px 50px;
+}
+.times .onetimess .onetime h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+.times .onetimess .onetime h6 {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #6f6f6f;
+  font-weight: bold;
+}
+.times .onetimess .onetime span {
+  color: #ff3837;
+  font-size: 46px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.times .onetimess .onetime span small {
+  font-size: 30px;
+  color: #ff3837;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.times .onetimess .onetime small {
+  color: #bababa;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.times .onetimess .onetime p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+}
+.times .onetimess .onetime button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 17px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+}
+.times .onetimess .onetime button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.times .onetimess .mid {
+  position: relative;
+  box-shadow: 0 0 37.74px 13.26px rgba(0, 0, 0, 0.07);
+}
+.times .onetimess .mid::before {
+  content: '';
+  position: absolute;
+  top: -6%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.times .onetimess .mid::after {
+  content: '';
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.map {
+  position: relative;
+}
+.map .real-map {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/03/gmap.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
+.map .contactus {
+  padding: 3rem 50px;
+  position: absolute;
+  width: 95%;
+  top: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+.map .contactus span {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.map .contactus img {
+  width: 60px;
+  height: auto;
+}
+.map .contactus a {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.map .contactus p {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+}
+.map .contactus button {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 17px 40px;
+  background-color: #212121;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: .2s all ease-in-out;
+}
+.map .contactus button:hover {
+  box-shadow: 0px 0px 20px red;
+  color: #ff3837;
+}
+
+.inputs {
+  padding-bottom: 1rem;
+}
+.inputs .inputparts {
+  background-color: #F7F7F7;
+  border-radius: 5px;
+}
+.inputs .inputparts span {
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  padding-left: 20px;
+}
+.inputs .inputparts input {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 25px 5px;
+}
+.inputs .inputparts .large {
+  width: 100%;
+  padding: 0 0 15rem 20px;
+}
+.inputs .lastone {
+  margin-top: 3rem !important;
+}
+.inputs .lastone p {
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.inputs .lastone textarea {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 20px;
+}
+.inputs .btnlast {
+  text-align: center;
+}
+.inputs .btnlast button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding: 20px 120px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 40px;
+  transition: .2s all ease-in-out;
+}
+.inputs .btnlast button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+
+.footer {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/bg8.jpg?id=1927);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .9;
+}
+.footer .division span {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.footer .division img {
+  width: 60px;
+  height: auto;
+}
+.footer .division p {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  padding: 60px 0 15px 0;
+  line-height: 1.7;
+}
+.footer .division .id {
+  color: white;
+  background-color: #111111;
+  border-radius: 50px;
+  padding: 14px 14px;
+  margin-right: 10px;
+  transition: .3s all ease-in-out;
+}
+.footer .division .id:hover {
+  background-color: #FF3837;
+}
+.footer .division .fb {
+  color: white;
+  background-color: #111111;
+  border-radius: 50px;
+  padding: 14px 18px;
+  margin-right: 10px;
+  transition: .3s all ease-in-out;
+}
+.footer .division .fb:hover {
+  background-color: #FF3837;
+}
+.footer .division .addi {
+  margin-top: 60px;
+}
+.footer .division .addi h5 {
+  margin-top: 40px;
+  font-size: 12px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  transition: .3s all ease-in-out;
+}
+.footer .division .addi h5:hover {
+  text-decoration: none;
+  color: #FF3837;
+}
+.footer .division .addi a {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  text-decoration: underline;
+  transition: .3s all ease-in-out;
+}
+.footer .division .addi a:hover {
+  text-decoration: none;
+  color: #FF3837;
+}
+.footer .division .addi .arrow {
+  font-size: 12px;
+  color: #FF3837;
+}
+.footer .division .inputform {
+  margin-top: 40px;
+}
+.footer .division .inputform input {
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: .3px solid #bbbbbb;
+  outline: none;
+  padding: 10px 100px 10px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+}
+.footer .division .inputform .lstinput {
+  padding: 10px 100px 70px 0;
+}
+.footer .division .inputform button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 10px 40px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+}
+.footer .division .inputform button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.footer .division:nth-child(3) {
+  padding-left: 40px;
+}
+
+.footer-bottom {
+  background-color: #000000;
+  padding: 3rem 0;
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Muli', sans-serif;
+}
+.footer-bottom p span {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+}
+.footer-bottom .scnd {
+  text-align: right;
+}
+.footer-bottom .scnd a {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  text-decoration: underline;
+  margin-left: 15px;
+  transition: .3s all ease-in-out;
+}
+.footer-bottom .scnd a:hover {
+  color: #FF3837;
+  text-decoration: none;
+}
+
+.header-media {
+  background-color: #111111;
+  display: none;
+}
+.header-media .media-top {
+  text-align: center;
+  border-bottom: 0.1px solid #c5c5c5;
+}
+.header-media .media-top p {
+  color: white;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 0;
+}
+.header-media .main {
+  padding: 15px 0;
+}
+.header-media .main .media-right {
+  justify-content: flex-end;
+}
+.header-media .main .media-right .shopping {
+  padding-right: 15px;
+}
+.header-media .main .media-right .shopping i {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.header-media .main .media-right .shopping .mini {
+  position: relative;
+}
+.header-media .main .media-right .shopping .mini .p1 {
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  color: white;
+  font-size: 10px;
+  background-color: #ff3837;
+  padding: 3px 7px;
+  border-radius: 50px;
+}
+.header-media .bar-alt {
+  background-color: white;
+  display: none;
+}
+.header-media .bar-alt a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+  padding: 10px 0 10px 30px;
+  border-bottom: .3px solid #bababa;
+}
+.header-media .bar-alt .home-alt {
+  display: none;
+}
+
+.media-testi {
+  display: none;
+}
+
+.media-t-members {
+  display: none;
+}
+
+.media-news {
+  display: none;
+}
+
+.media-times {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: none;
+  }
+
+  .header-media {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  #slider {
+    overflow-x: hidden;
+  }
+  #slider .sliderAll .sliderBox {
+    padding: 13rem 0;
+    text-align: center;
+  }
+  #slider .sliderAll .sliderBox h3 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #slider .sliderAll .sliderBox .btn1 {
+    display: none;
+  }
+
+  .range {
+    overflow-x: hidden;
+  }
+
+  .icons {
+    padding: 3rem 0;
+    overflow-x: hidden;
+  }
+  .icons .icon-part {
+    margin-bottom: 30px;
+  }
+
+  .salecars {
+    overflow-x: hidden;
+  }
+  .salecars #slider2 .sliderCar .cars .info {
+    display: none;
+  }
+
+  .together {
+    overflow-x: hidden;
+  }
+  .together .youtube {
+    padding: 3rem 15px;
+  }
+  .together .youtube .ytbpart2 {
+    padding: 12rem 0;
+    margin-top: 50px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .testi-slide {
+    overflow-x: hidden;
+  }
+  .testi-slide .parts .pieces {
+    display: none;
+  }
+  .testi-slide .parts .pieces2 {
+    display: none;
+  }
+
+  .media-testi {
+    background-color: #f6f6f7;
+    display: block;
+    overflow-x: hidden;
+  }
+  .media-testi .testiparts {
+    background-color: white;
+    padding: 30px;
+    margin: 0 25px;
+    box-shadow: 0 0 37.74px 13.26px rgba(0, 0, 0, 0.07);
+  }
+  .media-testi .testiparts:hover {
+    box-shadow: 0 0 0 0;
+  }
+  .media-testi .testiparts h3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .media-testi .testiparts p {
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    color: #5c5c5c;
+    line-height: 2;
+  }
+
+  .carmodels {
+    overflow-x: hidden;
+  }
+  .carmodels .models {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .autocar {
+    padding: 3rem 0;
+    overflow-x: hidden;
+  }
+  .autocar .auto2 {
+    padding-left: 15px;
+  }
+
+  .numbers {
+    overflow-x: hidden;
+  }
+  .numbers .counterUp {
+    margin: auto;
+  }
+  .numbers .lf .left {
+    margin-left: -30px;
+  }
+
+  .team-members {
+    display: none;
+  }
+
+  .media-t-members {
+    overflow-x: hidden;
+    display: block;
+    padding: 0 15px;
+    background-color: #f6f6f7;
+  }
+  .media-t-members .pieces {
+    padding: 0;
+  }
+  .media-t-members .pieces .alt-part {
+    background-color: #121212;
+    padding: 10px 0 10px 10px;
+  }
+  .media-t-members .pieces .alt-part h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .media-t-members .pieces .alt-part p {
+    font-size: 12px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+  }
+  .media-t-members .pieces .alt-part i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .media-t-members .pieces .two {
+    background-color: #FF3837;
+  }
+
+  .question {
+    overflow-x: hidden;
+  }
+
+  .gallerytxt {
+    overflow-x: hidden;
+  }
+
+  .gallery {
+    overflow-x: hidden;
+  }
+
+  .carsbody {
+    overflow-x: hidden;
+  }
+
+  .blred {
+    overflow-x: hidden;
+  }
+
+  .carstore {
+    overflow-x: hidden;
+  }
+
+  .news {
+    display: none;
+  }
+
+  .media-news {
+    display: block;
+    background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg4.jpg?id=1921);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 6rem 0;
+    overflow-x: hidden;
+  }
+  .media-news::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .9;
+  }
+  .media-news .newstxt {
+    padding-bottom: 50px;
+  }
+  .media-news .newstxt span {
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .media-news .newstxt img {
+    width: 60px;
+    height: auto;
+  }
+  .media-news .newspart {
+    background-color: #212121;
+    padding: 40px;
+    transition: .3s all ease-in-out;
+  }
+  .media-news .newspart h6 {
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    transition: .3s all ease-in-out;
+    margin-bottom: 25px;
+  }
+  .media-news .newspart h6:hover {
+    text-decoration: none;
+    color: #FF3837;
+  }
+  .media-news .newspart a {
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s all ease-in-out;
+  }
+  .media-news .newspart a:hover {
+    text-decoration: none;
+    color: #FF3837;
+  }
+  .media-news .newspart p {
+    margin: 50px 0 100px 0;
+    font-size: 14px;
+    color: #bbbbbb;
+    font-family: 'Muli', sans-serif;
+  }
+  .media-news .newspart button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b;
+    padding: 5px 28px;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    transition: .3s all ease-in-out;
+  }
+  .media-news .newspart button:hover {
+    border: 1px solid #ff3837;
+    color: white;
+    background-color: #ff3837;
+  }
+  .media-news .one:hover {
+    background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/12/alloy-auto-225840-2-400x400.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .subscribe {
+    overflow-x: hidden;
+  }
+  .subscribe .sbs input {
+    width: 50%;
+    padding: 10px 0 10px 0;
+  }
+  .subscribe .sbs button {
+    margin-left: 20px;
+  }
+
+  .times {
+    display: none;
+  }
+
+  .media-times {
+    overflow-x: hidden;
+    display: block;
+  }
+  .media-times .onetime {
+    padding: 30px 50px;
+    box-shadow: 0 0 37.74px 13.26px rgba(0, 0, 0, 0.07);
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .media-times .onetime h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+  .media-times .onetime h6 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #6f6f6f;
+    font-weight: bold;
+  }
+  .media-times .onetime span {
+    color: #ff3837;
+    font-size: 46px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  .media-times .onetime span small {
+    font-size: 30px;
+    color: #ff3837;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  .media-times .onetime small {
+    color: #bababa;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  .media-times .onetime p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5c5c5c;
+    font-family: 'Muli', sans-serif;
+  }
+  .media-times .onetime button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 17px 40px;
+    background-color: #FF3837;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    transition: .2s all ease-in-out;
+  }
+  .media-times .onetime button:hover {
+    box-shadow: 0px 0px 20px red;
+  }
+
+  .map {
+    overflow-x: hidden;
+  }
+  .map .contactus {
+    display: none;
+  }
+
+  .inputs {
+    padding: 0 15px;
+    overflow-x: hidden;
+  }
+  .inputs .inputparts {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    overflow-x: hidden;
+    padding: 2rem 0;
+  }
+  .footer .division {
+    margin-bottom: 20px;
+  }
+  .footer .division p {
+    padding-top: 10px;
+  }
+  .footer .division .addi {
+    margin-top: 10px;
+    padding-right: 7rem;
+  }
+  .footer .division .addi h5 {
+    margin-top: 30px;
+  }
+  .footer .division .inputform {
+    margin-top: 0;
+  }
+  .footer .division .inputform input {
+    width: 100%;
+  }
+  .footer .division:nth-child(3) {
+    padding-left: 15px;
+  }
+
+  .footer-bottom {
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .footer-bottom .scnd {
+    text-align: center;
+  }
+  .footer-bottom .scnd a {
+    display: block;
+  }
+}
+.aboutus .aboutt {
+  position: relative;
+}
+.aboutus .aboutt::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FF3837;
+  bottom: -1px;
+  left: -1px;
+}
+
+.aufirst {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  padding: 10rem 0 7rem 0;
+}
+.aufirst::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .8;
+}
+.aufirst h3 {
+  color: white;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.aufirst a {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  color: #afafaf;
+  text-decoration: underline;
+  transition: .3s all ease-in-out;
+}
+.aufirst a:hover {
+  text-decoration: none;
+  color: #FF3837;
+}
+
+.au-icons {
+  padding: 6rem 0;
+  background-color: #F6F6F7;
+}
+.au-icons .icon-part {
+  text-align: center;
+  background-color: #F7F8F9;
+  padding: 50px;
+  width: 32%;
+  border: 1px solid #F0F1F2;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.07);
+  transition: .3s all ease-in-out;
+}
+.au-icons .icon-part:hover {
+  border: 1px solid #FF3837;
+}
+.au-icons .icon-part img {
+  width: 56px;
+  height: 56px;
+  transition: .3s all ease-in-out;
+}
+.au-icons .icon-part img:hover {
+  transform: scale(1.1);
+}
+.au-icons .icon-part p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 25px 0;
+}
+.au-icons .icon-part h5 {
+  font-size: 14px;
+  color: #5c5c5c;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.7;
+}
+
+.au-team {
+  padding: 5rem 0;
+}
+.au-team .team-part {
+  padding: 80px 60px 40px 60px;
+  border: 1px solid #F0F1F2;
+  width: 32%;
+  background-color: white;
+  transition: .3s all ease-in-out;
+  position: relative;
+}
+.au-team .team-part:hover {
+  border: 1px solid #fd7c7d;
+  background-image: linear-gradient(to right, #FF3837, #fd7c7d);
+}
+.au-team .team-part:hover p {
+  color: white;
+}
+.au-team .team-part:hover h5 {
+  color: white;
+}
+.au-team .team-part:hover h4 {
+  color: white;
+}
+.au-team .team-part:hover i {
+  color: white;
+}
+.au-team .team-part .round {
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
+}
+.au-team .team-part p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: .3s all ease-in-out;
+}
+.au-team .team-part h5 {
+  font-size: 14px;
+  color: #FF3837;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 25px;
+  transition: .3s all ease-in-out;
+}
+.au-team .team-part h4 {
+  font-size: 14px;
+  color: #6c6c6c;
+  font-family: 'Muli', sans-serif;
+  line-height: 2;
+  transition: .3s all ease-in-out;
+}
+.au-team .team-part i {
+  color: #6c6c6c;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: .3s all ease-in-out;
+}
+
+.clients {
+  background-color: #212121;
+  padding: 4rem 0;
+  overflow-x: hidden;
+}
+.clients .l span {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.clients .l img {
+  width: 60px;
+  height: auto;
+}
+.clients .l h5 {
+  font-size: 16px;
+  color: #bbbbbb;
+  font-family: 'Poppins', sans-serif;
+}
+.clients .r img {
+  width: 80px;
+  height: auto;
+  margin-left: 30px;
+}
+.clients .r .slick-prev::before {
+  font-size: 0;
+}
+.clients .r .slick-next::before {
+  font-size: 0;
+}
+
+.au-carstore .items {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.au-carstore .items:hover .au-btn {
+  visibility: visible;
+}
+.au-carstore .items .au-btn {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s all ease-in-out;
+  visibility: hidden;
+}
+.au-carstore .items .au-btn button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 12px 20px;
+  background-color: #FF3837;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+  transition: .2s all ease-in-out;
+}
+.au-carstore .items .au-btn button:hover {
+  box-shadow: 0px 0px 20px red;
+}
+.au-carstore .items img {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.au-carstore .items a {
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 0;
+}
+.au-carstore .items a:hover {
+  text-decoration: none;
+}
+.au-carstore .items span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+.au-carstore .items del {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+.au-carstore .items p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff3837;
+}
+
+.au-autocar {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg3.jpg?id=1919);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 6rem 0 2rem 0;
+  margin-top: -6px;
+}
+.au-autocar::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .9;
+}
+.au-autocar .auto1 .sentence {
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+.au-autocar .auto1 .sentence h5 {
+  font-size: 16px;
+  color: #bbbbbb;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.au-autocar .auto1 .sentence h3 {
+  font-size: 24px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 30px;
+}
+.au-autocar .auto1 .imghover {
+  position: relative;
+  z-index: 2;
+}
+.au-autocar .auto1 .imghover .plus1:hover::after {
+  visibility: visible;
+  top: 36%;
+}
+.au-autocar .auto1 .imghover .plus1::before {
+  content: '+';
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 4%;
+  font-size: 20px;
+  color: white;
+  background-color: #ff3837;
+  border-radius: 50px;
+  padding: 0 10px 3px 10px;
+  z-index: 5;
+}
+.au-autocar .auto1 .imghover .plus1::after {
+  content: 'Elementum congue amet et eget, odio gravida taciti risus turpis risus, venenatis sem odio sagittis harum, nulla non tempor libero aliquam duis';
+  cursor: pointer;
+  position: absolute;
+  top: 33%;
+  left: -10%;
+  font-size: 11px;
+  color: #646464;
+  background-color: white;
+  z-index: 5;
+  padding: 2rem 15px;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  z-index: 10;
+}
+.au-autocar .auto1 .imghover .plus2:hover::after {
+  visibility: visible;
+  top: -7%;
+}
+.au-autocar .auto1 .imghover .plus2::before {
+  content: '+';
+  cursor: pointer;
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  font-size: 20px;
+  color: white;
+  background-color: #ff3837;
+  border-radius: 50px;
+  padding: 0 10px 3px 10px;
+  z-index: 5;
+}
+.au-autocar .auto1 .imghover .plus2::after {
+  content: 'Elementum congue amet et eget, odio gravida taciti risus turpis risus, venenatis sem odio sagittis harum, nulla non tempor libero aliquam duis';
+  cursor: pointer;
+  position: absolute;
+  top: -10%;
+  left: 12%;
+  font-size: 11px;
+  color: #646464;
+  background-color: white;
+  z-index: 5;
+  padding: 2rem 15px;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  z-index: 10;
+}
+.au-autocar .auto1 .imghover .plus3:hover::after {
+  visibility: visible;
+  top: 11%;
+}
+.au-autocar .auto1 .imghover .plus3::before {
+  content: '+';
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  font-size: 20px;
+  color: white;
+  background-color: #ff3837;
+  border-radius: 50px;
+  padding: 0 10px 3px 10px;
+  z-index: 5;
+}
+.au-autocar .auto1 .imghover .plus3::after {
+  content: 'Elementum congue amet et eget, odio gravida taciti risus turpis risus, venenatis sem odio sagittis harum, nulla non tempor libero aliquam duis';
+  cursor: pointer;
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  font-size: 11px;
+  color: #646464;
+  background-color: white;
+  z-index: 5;
+  padding: 2rem 15px;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  z-index: 10;
+}
+.au-autocar .auto1 .imghover .plus4:hover::after {
+  visibility: visible;
+  top: -20%;
+}
+.au-autocar .auto1 .imghover .plus4::before {
+  content: '+';
+  cursor: pointer;
+  position: absolute;
+  top: 19%;
+  left: 72%;
+  font-size: 20px;
+  color: white;
+  background-color: #ff3837;
+  border-radius: 50px;
+  padding: 0 10px 3px 10px;
+  z-index: 5;
+}
+.au-autocar .auto1 .imghover .plus4::after {
+  content: 'Elementum congue amet et eget, odio gravida taciti risus turpis risus, venenatis sem odio sagittis harum, nulla non tempor libero aliquam duis';
+  cursor: pointer;
+  position: absolute;
+  top: -23%;
+  left: 55%;
+  font-size: 11px;
+  color: #646464;
+  background-color: white;
+  z-index: 5;
+  padding: 2rem 15px;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  z-index: 10;
+}
+.au-autocar .auto2 {
+  padding: 4rem 0 4rem 4rem;
+}
+.au-autocar .auto2 .pieces {
+  margin-bottom: 30px;
+}
+.au-autocar .auto2 .pieces img {
+  width: 70px;
+  height: auto;
+  padding: 0 10px 20px 0;
+}
+.au-autocar .auto2 .pieces span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.au-autocar .auto2 .pieces p {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: 'Muli', sans-serif;
+  padding-right: 30px;
+  line-height: 1.7;
+}
+
+.step {
+  background-color: #DD3333;
+  padding: 5rem 0;
+}
+.step .steps .step-left {
+  z-index: 20;
+}
+.step .steps .step-left .visible {
+  z-index: 50;
+  background-color: #ff0100;
+  border-radius: 50px;
+  padding: 20px;
+  transition: .3s all ease-in-out;
+}
+.step .steps .step-left .visible:hover {
+  background-color: #ff3837;
+}
+.step .steps .step-left .visible img {
+  width: 75px;
+  height: 75px;
+}
+.step .steps .step-right h3 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.step .steps .step-right p {
+  color: white;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+}
+
+.ab {
+  margin-top: 0;
+}
+
+@media (max-width: 576px) {
+  .aboutus {
+    display: none;
+  }
+
+  .header-media {
+    display: block;
+  }
+
+  .aufirst {
+    padding: 2rem 0;
+  }
+
+  .au-icons {
+    padding: 3rem 0;
+  }
+  .au-icons .icon-part {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .au-team .team-part {
+    width: 50%;
+  }
+  .au-team .third {
+    display: none;
+  }
+
+  .clients {
+    padding: 3rem 0;
+  }
+  .clients .l {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .au-autocar .auto1 .imghover .plus1::after {
+    width: 45%;
+    padding: 20px 20px;
+    height: 115px;
+  }
+  .au-autocar .auto1 .imghover .plus2::after {
+    width: 45%;
+    padding: 20px 20px;
+    height: 115px;
+  }
+  .au-autocar .auto1 .imghover .plus3::after {
+    width: 45%;
+    padding: 20px 20px;
+    height: 115px;
+  }
+  .au-autocar .auto1 .imghover .plus4::after {
+    width: 45%;
+    padding: 20px 20px;
+    height: 115px;
+  }
+  .au-autocar .auto2 {
+    padding-left: 30px;
+  }
+
+  .au-carstore .items {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .au-carstore .items .au-btn {
+    bottom: 35%;
+  }
+  .au-carstore .items .au-btn button {
+    padding: 10px 14px;
+  }
+
+  .step {
+    padding: 2rem 0;
+  }
+  .step .steps {
+    margin-bottom: 30px;
+  }
+  .step .steps .step-right {
+    padding-right: 5rem;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer .division {
+    margin-bottom: 20px;
+  }
+  .footer .division p {
+    padding-top: 10px;
+  }
+  .footer .division .addi {
+    margin-top: 10px;
+    padding-right: 7rem;
+  }
+  .footer .division .addi h5 {
+    margin-top: 30px;
+  }
+  .footer .division .inputform {
+    margin-top: 0;
+  }
+  .footer .division .inputform input {
+    width: 100%;
+  }
+  .footer .division:nth-child(3) {
+    padding-left: 15px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+  .footer-bottom .scnd {
+    text-align: center;
+  }
+  .footer-bottom .scnd a {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
